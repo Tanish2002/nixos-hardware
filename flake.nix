@@ -59,12 +59,11 @@
         beagleboard-pocketbeagle = import ./beagleboard/pocketbeagle;
         chuwi-minibook-x = import ./chuwi/minibook-x;
         deciso-dec = import ./deciso/dec;
-        dell-e7240 =
-          deprecated "1326" "dell-e7240"
-            (import ./dell/e7240);
+        dell-e7240 = deprecated "1326" "dell-e7240" (import ./dell/e7240);
         dell-g3-3779 = import ./dell/g3/3779;
         dell-g3-3579 = import ./dell/g3/3579;
         dell-inspiron-3442 = import ./dell/inspiron/3442;
+        dell-g15-5511 = import ./dell/g15/5511;
         dell-inspiron-14-5420 = import ./dell/inspiron/14-5420;
         dell-inspiron-5509 = import ./dell/inspiron/5509;
         dell-inspiron-5515 = import ./dell/inspiron/5515;
@@ -84,9 +83,7 @@
         dell-latitude-e7240 = import ./dell/latitude/e7240;
         dell-optiplex-3050 = import ./dell/optiplex/3050;
         dell-poweredge-r7515 = import ./dell/poweredge/r7515;
-        dell-precision-3490 =
-          deprecated "1491" "dell-precision-3490"
-            (import ./dell/precision/3490);
+        dell-precision-3490 = deprecated "1491" "dell-precision-3490" (import ./dell/precision/3490);
         dell-precision-3490-nvidia = import ./dell/precision/3490/nvidia;
         dell-precision-3490-intel = import ./dell/precision/3490/intel;
         dell-precision-3541 = import ./dell/precision/3541;
