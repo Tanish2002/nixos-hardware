@@ -4,8 +4,7 @@
   outputs = _: {
     nixosModules =
       let
-        deprecated =
-          issue: name: value:
+        deprecated = issue: name: value:
           builtins.trace "warning: ${name} flake output is deprecated and will be removed. See https://github.com/NixOS/nixos-hardware/issues/${issue} for more information" value;
         import = path: path; # let the module system know what we are exporting
       in
@@ -51,6 +50,7 @@
         deciso-dec = import ./deciso/dec;
         dell-e7240 = import ./dell/e7240;
         dell-g3-3779 = import ./dell/g3/3779;
+        dell-g15-5511 = import ./dell/g15/5511;
         dell-inspiron-14-5420 = import ./dell/inspiron/14-5420;
         dell-inspiron-5509 = import ./dell/inspiron/5509;
         dell-inspiron-5515 = import ./dell/inspiron/5515;
